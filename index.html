@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>PokeDex</title>
+        <link rel="stylesheet" href="styles.css">
+        
+    </head>
+    <body>
+        <div class="mid-container">
+
+            <header>
+                <img src="pictures/logo.png" alt="pokedex logo" id="pokedex-logo">
+                <h1>PokeDex</h1>
+                <h6>YOUR FAVORITE POKEMON FINDER</h6>
+            </header>
+            <section>
+                <div class="app-box">
+                    <h3>Select your Pokemon</h3> <!-- 1 - 649 gifs, pokemon names go further for a bit-->
+                    <hr>
+                    <p>Choose an ID (1 - 649) and click on the "Show" button.</p>
+                    <div id="submit-box">
+                        <input type="number" id="input-id" value="1" max=649 min="1">
+                        <button type="button" id="submit-button" onclick="loadPokeImage( document.getElementById('input-id').value )">Show</button>
+                    </div>
+                    <p id="pokemon-name">???</p>
+                    <div class="poke-image-container">
+                        <img src="pictures/pokemon-outline.png" id="pokemon-image">
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
